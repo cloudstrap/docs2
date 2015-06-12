@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  {% include head.html %}
+  <body>
+    {% include top-navigation.html %}
+
+    <div class="container {% if page.id %} post {% else %} page {% endif %}">
+      {% if page.technology == "ruby" %}
+        {% include ruby/sidebar.html %}
+
+      {% elsif page.technology == "php" %}
+        {% include php/sidebar.html %}
+
+      {% elsif page.technology == "python" %}
+        {% include python/sidebar.html %}
+
+      {% elsif page.technology == "nodejs" %}
+        {% include nodejs/sidebar.html %}
+
+      {% endif %}
+
+      <article>
+        {{ content }}
+      </article>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>

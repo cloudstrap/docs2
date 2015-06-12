@@ -1,0 +1,19 @@
+# use ruby-2.2
+develo activate
+
+# run gulp check (jekyll doctor)
+cmd_output=$(gulp check)
+exit_status=$?
+
+if [ "${exit_status}" -eq 1 ]
+  then
+    # exit with cool message
+    echo
+    _develo_sad_color_line;
+    echo -e "\nThe Doctor:\nThere are some errors. Please check and fix them."
+    _develo_sad_color_line;
+    echo
+  else
+    # continue to gulp
+    gulp
+fi

@@ -1,0 +1,23 @@
+<nav class="main">
+  <div class="inner">
+    <a href="/" class="logo">
+      {% icon startapp-logo-text 150x30 %}
+    </a>
+
+    <div class="responsive-sidebar-nav">
+      <a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+    </div>
+
+    <ul class="main-nav">
+      {% for link in site.navi %}
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+          {% assign current = 'current' %}
+        {% endif %}
+        <li class="{{ current }}">
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

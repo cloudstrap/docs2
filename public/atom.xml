@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>StartApp Documentation</title>
+ <link href="localhost:4000/atom.xml" rel="self"/>
+ <link href="localhost:4000/"/>
+ <updated>2015-06-12T14:39:12+03:00</updated>
+ <id>localhost:4000</id>
+ <author>
+   <name>Pavel Ivanov</name>
+   <email>pivanov@mozilla.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>PHP приложения в StartАpp</title>
+   <link href="localhost:4000/php/create"/>
+   <updated>2015-06-06T00:00:00+03:00</updated>
+   <id>localhost:4000/php/create</id>
+   <content type="html">&lt;h1&gt;Създаване на PHP приложение&lt;/h1&gt;
+
+&lt;h2&gt;Създаване на PHP приложение&lt;/h2&gt;
+
+&lt;h3&gt;Създаване на PHP приложение&lt;/h3&gt;
+
+&lt;iframe class=&quot;video&quot; width=&quot;720&quot; height=&quot;439&quot; src=&quot;http://www.youtube.com/embed/76m2kmsAxhA?showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;В StartАpp това става с една команда:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;app create myphpapp php-5.5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Наличните версии на PHP са &lt;code&gt;php-5.3&lt;/code&gt;, &lt;code&gt;php-5.4&lt;/code&gt;, &lt;code&gt;php-5.5&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Резултатът от тази команда е:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Using php-5.5 (PHP 5.5) for &amp;#39;php&amp;#39;
+
+Application Options
+-------------------
+
+Domain:     demos
+Cartridges: php-5.5
+Gear Size:  default
+Scaling:    no
+
+Creating application &amp;#39;myphpapp&amp;#39; ... done
+
+
+Waiting for your DNS name to be available ...
+    retry # 1 - Waiting for DNS: myphpapp-demos.sapp.io
+    retry # 2 - Waiting for DNS: myphpapp-demos.sapp.io
+    retry # 3 - Waiting for DNS: myphpapp-demos.sapp.io
+done
+
+Cloning into &amp;#39;myphpapp&amp;#39;...
+
+Your application &amp;#39;myphpapp&amp;#39; is now available.
+
+    URL:        http://myphpapp-demos.sapp.io/
+    SSH to:     52debd81bfbf5aa4ca000482@myphpapp-demos.sapp.io
+    Git remote: ssh://52debd81bfbf5aa4ca000482@myphpapp-demos.sapp.io/~/git/myphpapp.git/
+    Cloned to:  /private/tmp/myphpapp
+
+Run &amp;#39;app show-app myphpapp&amp;#39; for more details about your app.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+
+</feed>
